@@ -1,0 +1,90 @@
+.header{
+	height: 100vh;
+	text-align: right;
+	background-image: url("../assets/png/ecologiesgroup.png");
+	background-repeat: no-repeat;
+}
+
+.headergrid{
+	grid-template-columns: auto auto;
+	grid-template-rows: auto;
+	display: grid;
+}
+.grid{
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto auto;
+	display: grid;
+
+}
+
+.one{
+	grid-column: 1/2;
+	grid-row: 1/2;
+	height: 100vh;
+	width: 50vw;
+	background-color: red;
+	text-align: center;
+}
+
+.two{
+	grid-column: 2/3;
+	grid-row: 1/2;
+	height: 100vh;
+	width: 50vw;
+	background-color: yellow;
+}
+
+.three{
+	grid-column: 1/2;
+	grid-row: 2/3;
+	height: 100vh;
+	width: 50vw;
+	text-align: center;
+	background-color: green;
+}
+
+.four{ 
+	grid-column: 2/3;
+	grid-row: 2/3;
+	height: 100vh;
+	width: 50vw;
+	text-align: center;
+	background-color: blue;
+}
+
+.five{
+	grid-column: 1/2;
+	grid-row: 3/4;
+	height: 100vh;
+	background-color: red;
+	width: 50vw;
+	text-align: center;
+}
+
+.six{
+	grid-column: 2/3;
+	grid-row: 3/4;
+	height: 100vh;
+	width: 50vw;
+	background-color: yellow;
+
+}
+
+.seven{
+	grid-column: 1/2;
+	grid-row: 4/5;
+	height: 100vh;
+	background-color: green;
+	width: 50vw;
+	text-align: center;
+}
+
+.eight{
+	grid-column: 2/3;
+	grid-row: 4/5;
+	text-align: center;
+	height: 100vh;
+	width: 50vw;
+	background-color: blue;
+	
+}
