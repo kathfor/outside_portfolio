@@ -5,11 +5,7 @@
 	background-repeat: no-repeat;
 }
 
-.headergrid{
-	grid-template-columns: auto auto;
-	grid-template-rows: auto;
-	display: grid;
-}
+
 .grid{
 	grid-template-columns: auto auto;
 	grid-template-rows: auto auto auto auto;
