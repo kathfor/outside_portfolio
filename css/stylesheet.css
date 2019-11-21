@@ -84,3 +84,95 @@
 	background-color: blue;
 	
 }
+
+a.skip-main {
+	left:-999px;
+	position:absolute;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+	z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+	color: #fff;
+	background-color:#000;
+	left: auto;
+	top: 0;
+	width: 30%;
+	height: auto;
+	overflow:auto;
+	margin: 10px 35%;
+	padding:5px;
+	border-radius: 15px;
+	border:4px solid yellow;
+	text-align:center;
+	font-size:1.2em;
+	z-index:999;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+}
+
+/*phone*/
+@media screen and (max-width: 760px){
+	.grid{
+		display: block;
+	}
+
+	.one{
+		width: 100vw;
+
+	}
+
+	.two{
+		width: 100vw;
+
+	}
+	.three{
+		width: 100vw;
+
+	}
+
+	.four{
+		width: 100vw;
+	}
+
+	.five{
+		width: 100vw;
+	}
+
+	.six{
+		width: 100vw;
+	}
+
+	.seven{
+		width: 100vw;
+	}
+
+	.eight{
+		width: 100vw;
+	}
+}
+
+/*ipad*/
+
+@media screen and (min-width: 768px) and (max-width: 1245px){
+
+}
+
+
+
+/*full screen*/
+@media screen and (min-width: 1245px){
+	.header {
+		background-image: url("../images/header_logo.png");
+	}
+
+}
+
+
+/*reduced motion*/
+
+@media screen and (prefers-reduced-motion: reduce){
+
+  }
