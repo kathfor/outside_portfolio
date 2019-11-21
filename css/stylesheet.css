@@ -1,10 +1,43 @@
 .header{
 	height: 100vh;
-	text-align: right;
+	background-position: top;
+	text-align: center;
 	background-image: url("../assets/png/ecologiesgroup.png");
 	background-repeat: no-repeat;
+	padding: -100px;
+
 }
 
+.nav{
+	display: flex;
+	justify-content: center;
+	padding-top: 500px;
+	font-family: "Open Sans";
+	color: blue;
+}
+
+.nav li{
+	display: inline-block;
+}
+
+a:link{
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid black;
+}
+
+a:visited{
+	color: black;
+}
+
+a:active{
+	text-decoration: ;
+}
 
 .grid{
 	grid-template-columns: auto auto;
@@ -164,10 +197,6 @@ a.skip-main:focus, a.skip-main:active {
 
 /*full screen*/
 @media screen and (min-width: 1245px){
-	.header {
-		background-image: url("../images/header_logo.png");
-	}
-
 }
 
 
