@@ -11,13 +11,19 @@
 .nav{
 	display: flex;
 	justify-content: center;
-	padding-top: 500px;
+	padding-top: 80vh;
 	font-family: "Open Sans";
 	color: blue;
+	font-size: 30px;
+	overflow: hidden;
+	/*transition: 0.4s;
+	position: fixed;
+	z-index: 99;*/
 }
 
 .nav li{
 	display: inline-block;
+	padding-right: 15px;
 }
 
 a:link{
@@ -37,6 +43,12 @@ a:visited{
 
 a:active{
 	text-decoration: ;
+}
+
+h2{
+	font-family: "Open Sans";
+	font-size: 50px;
+	padding-top: 50vh;
 }
 
 .grid{
@@ -150,6 +162,15 @@ a.skip-main:focus, a.skip-main:active {
 @media screen and (max-width: 760px){
 	.grid{
 		display: block;
+	}
+	.header{
+		background-position: top;
+		text-align: center;
+		background-image: url("../assets/png/mobile_ecologiesgroup.png");
+	}
+
+	.nav{
+		font-size: 20px;
 	}
 
 	.one{
