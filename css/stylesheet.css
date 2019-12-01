@@ -3,22 +3,18 @@ html {
 }
 
 .header{
-	height: 100vh;
 	background-position: top;
 	text-align: center;
-	background-image: url("../assets/png/ecologiesgroup.png");
-	background-repeat: no-repeat;
-	padding: -100px;
-
 }
 
 .nav{
+	padding: 20px;
 	display: flex;
 	justify-content: center;
-	padding-top: 80vh;
 	font-family: "Open Sans";
-	color: blue;
-	font-size: 30px;
+	background-color: black;
+	color: white;
+	font-size: 1.4rem;
 	overflow: hidden;
 	/*transition: 0.4s;
 	position: fixed;
@@ -30,23 +26,29 @@ html {
 	padding-right: 15px;
 }
 
-a:link{
+.nav a:link{
 	text-decoration: none;
-	color: blue;
+	color: white;
 }
 
-a:hover{
+.nav a:visited{
+	color: white;
+}
+
+.nav a:hover{
 	text-decoration: none;
-	color: black;
+	color: yellow;
 	border-bottom: 1px solid black;
 }
 
-a:visited{
-	color: black;
+.nav a:active{
+	text-decoration: ;
 }
 
-a:active{
-	text-decoration: ;
+h1 {
+	font-size: 2.5rem;
+	text-align: center;
+	padding: 40px;
 }
 
 h2{
@@ -69,7 +71,7 @@ p {
 
 .left {
 	display: flex;
-	align-items: top;
+	align-items: start;
 	justify-content: center;
 	padding: 30px 10px 20px 10px;
 
@@ -78,6 +80,8 @@ p {
 	color: darkblue;
 
 	border-right: 2px solid darkblue;
+
+	text-align: left;
 }
 
 .right {
@@ -254,6 +258,16 @@ p {
 	color: purple;
 }
 
+.footer {
+	width: 100vw;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 30px 20px;
+}
+
 a.skip-main {
 	left:-999px;
 	position:absolute;
@@ -290,11 +304,6 @@ a.skip-main:focus, a.skip-main:active {
 	.header{
 		background-position: top;
 		text-align: center;
-		background-image: url("../assets/png/mobile_ecologiesgroup.png");
-	}
-
-	.nav{
-		font-size: 20px;
 	}
 
 	.one{
