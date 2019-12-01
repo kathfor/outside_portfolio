@@ -1,3 +1,7 @@
+html {
+	font-family: "PT Serif";
+}
+
 .header{
 	height: 100vh;
 	background-position: top;
@@ -46,77 +50,122 @@ a:active{
 }
 
 h2{
-	font-family: "Open Sans";
-	font-size: 50px;
-	padding-top: 50vh;
+	
+	font-size: 2.5rem;
+}
+
+p {
+	font-size: 1rem;
 }
 
 .grid{
-	grid-template-columns: auto auto;
+	width: 100vw;
+	grid-template-columns: 20fr 80fr;
 	grid-template-rows: auto auto auto auto;
 	display: grid;
 
+	grid-row-gap: 10px;
+}
+
+.left {
+	display: flex;
+	align-items: top;
+	justify-content: center;
+	padding: 20px 10px;
+
+	margin: 5px 0;
+
+	border-right: 1px solid black;
+
+	background-color: yellow;
+}
+
+.right {
+	display: flex;
+	align-items: top;
+	justify-content: center;
+	padding: 20px 30px;	
+
+	margin: 5px 0;
 }
 
 .one{
 	grid-column: 1/2;
 	grid-row: 1/2;
-	height: 100vh;
-	width: 50vw;
-	background-color: red;
 	text-align: center;
 }
 
 .two{
 	grid-column: 2/3;
 	grid-row: 1/2;
-	height: 100vh;
-	width: 50vw;
-	background-color: yellow;
 }
 
 .three{
 	grid-column: 1/2;
 	grid-row: 2/3;
-	height: 100vh;
-	width: 50vw;
 	text-align: center;
-	background-color: green;
 }
 
 .four{ 
 	grid-column: 2/3;
 	grid-row: 2/3;
-	height: 100vh;
-	width: 50vw;
 	text-align: center;
-	background-color: blue;
+
+	display: grid;
+	grid-template-columns: auto;
+}
+
+.member {
+	display: flex;
+	flex-direction: row;
+	margin: 20px;
+}
+
+.member .imageSection img {
+	border-radius: 50%;
+	height: 150px;
+	width: 150px
+}
+
+.member .infoSection {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: left;
+
+	padding-left: 50px;
+
+
+}
+
+.member .name {
+	font-size: 1.5rem;
+	color: blue;
+}
+
+.member .name, .position, .school, .links {
+	margin-top: 5px;
+}
+
+.member .links a {
+	color: purple;
 }
 
 .five{
 	grid-column: 1/2;
 	grid-row: 3/4;
-	height: 100vh;
-	background-color: red;
-	width: 50vw;
 	text-align: center;
 }
 
 .six{
 	grid-column: 2/3;
 	grid-row: 3/4;
-	height: 100vh;
-	width: 50vw;
-	background-color: yellow;
 
 }
 
 .seven{
 	grid-column: 1/2;
 	grid-row: 4/5;
-	height: 100vh;
-	background-color: green;
-	width: 50vw;
 	text-align: center;
 }
 
@@ -124,9 +173,6 @@ h2{
 	grid-column: 2/3;
 	grid-row: 4/5;
 	text-align: center;
-	height: 100vh;
-	width: 50vw;
-	background-color: blue;
 	
 }
 
@@ -218,8 +264,10 @@ a.skip-main:focus, a.skip-main:active {
 
 /*full screen*/
 @media screen and (min-width: 1245px){
+	.four{ 
+		grid-template-columns: 1fr 1fr;
+	}
 }
-
 
 /*reduced motion*/
 
