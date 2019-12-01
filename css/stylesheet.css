@@ -82,9 +82,11 @@ p {
 
 .right {
 	display: flex;
-	align-items: top;
+	align-items: flex-start;
 	justify-content: center;
 	padding: 20px 30px;	
+
+	box-sizing: border-box;
 
 	margin: 5px 0;
 }
@@ -117,7 +119,7 @@ p {
 
 .member {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	margin: 20px;
 }
 
@@ -132,10 +134,7 @@ p {
 	justify-content: center;
 	flex-direction: column;
 	text-align: left;
-
-	padding-left: 50px;
-
-
+	align-items: center;
 }
 
 .member .name {
@@ -161,7 +160,46 @@ p {
 	grid-column: 2/3;
 	grid-row: 3/4;
 
+	display: grid;
+	grid-template-columns: auto;
 }
+
+.project {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+
+.project .proj_image_section img {
+	width: 150px
+}
+
+.project .proj_info_section {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: left;
+}
+
+.project .proj_info_section .title {
+	color: blue;
+	font-size: 1.5rem;
+}
+
+.project .proj_info_section .tags {
+	color: darkred;
+	margin-top: 5px;
+}
+
+.project .proj_info_section .proj_description {
+	margin-top: 5px;
+}
+
+.project .proj_info_section .proj_links {
+	margin-top: 5px;
+	color: purple;
+}
+
 
 .seven{
 	grid-column: 1/2;
@@ -257,6 +295,19 @@ a.skip-main:focus, a.skip-main:active {
 /*ipad*/
 
 @media screen and (min-width: 768px) and (max-width: 1245px){
+	.member, .project {
+		flex-direction: row;
+	}
+
+	.member .infoSection {
+		padding-left: 50px;
+		align-items: start;
+	}
+
+	.project .proj_info_section {
+		padding-left: 50px;
+		align-items: start;
+	}
 
 }
 
@@ -264,7 +315,7 @@ a.skip-main:focus, a.skip-main:active {
 
 /*full screen*/
 @media screen and (min-width: 1245px){
-	.four{ 
+	.four, .six{ 
 		grid-template-columns: 1fr 1fr;
 	}
 }
