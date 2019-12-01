@@ -51,7 +51,7 @@ a:active{
 
 h2{
 	
-	font-size: 2.5rem;
+	font-size: 2.2rem;
 }
 
 p {
@@ -71,13 +71,13 @@ p {
 	display: flex;
 	align-items: top;
 	justify-content: center;
-	padding: 20px 10px;
+	padding: 30px 10px 20px 10px;
 
 	margin: 5px 0;
 
-	border-right: 1px solid black;
+	color: darkblue;
 
-	background-color: yellow;
+	border-right: 2px solid darkblue;
 }
 
 .right {
@@ -211,7 +211,47 @@ p {
 	grid-column: 2/3;
 	grid-row: 4/5;
 	text-align: center;
+
+	display: grid;
+	grid-template-columns: auto;
 	
+}
+
+.publication {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+
+.publication .pub_image_section img {
+	width: 150px
+}
+
+.publication .pub_info_section {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: left;
+}
+
+.publication .pub_info_section .pub_title{
+	font-size: 1.2rem;
+}
+
+.publication .pub_info_section .pub_authors{
+	margin-top: 5px;
+}
+
+.publication .pub_info_section .pub_authors a{
+	color: blue;
+}
+
+.publication .pub_info_section .pub_more_info{
+	margin-top: 5px;
+}
+
+.publication .pub_info_section .pub_more_info .pub_pdf{
+	color: purple;
 }
 
 a.skip-main {
@@ -295,7 +335,8 @@ a.skip-main:focus, a.skip-main:active {
 /*ipad*/
 
 @media screen and (min-width: 768px) and (max-width: 1245px){
-	.member, .project {
+
+	.member, .project, .publication {
 		flex-direction: row;
 	}
 
@@ -309,14 +350,38 @@ a.skip-main:focus, a.skip-main:active {
 		align-items: start;
 	}
 
+	.publication .pub_info_section {
+		padding-left: 50px;
+		align-items: start;		
+	}
+
 }
 
 
 
 /*full screen*/
 @media screen and (min-width: 1245px){
-	.four, .six{ 
+	.four, .six, .eight{ 
 		grid-template-columns: 1fr 1fr;
+	}
+
+	.member, .project, .publication {
+		flex-direction: row;
+	}
+
+	.member .infoSection {
+		padding-left: 50px;
+		align-items: start;
+	}
+
+	.project .proj_info_section {
+		padding-left: 50px;
+		align-items: start;
+	}
+
+	.publication .pub_info_section {
+		padding-left: 50px;
+		align-items: start;		
 	}
 }
 
