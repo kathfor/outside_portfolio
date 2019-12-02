@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="javascript.js"></script>
 
  	<title> Interaction Ecologies Group </title>
  </head>
@@ -15,19 +16,23 @@
  	<header>
    	<div class = "header">
       <a class = "skip-main" href="#main">Skip to Main Content</a>
-      <div class="nav">
+      <div class="nav" id="nav">
           <nav class = "navigation">
             <ul>
               <li class = "navitem"><a href="#about">About Me </a></li>
               <li class = "navitem"><a href="#the_team">The Team </a></li>
               <li class = "navitem"><a href="#projects">Projects </a></li>
               <li class = "navitem"><a href="#publications">Publications </a></li>
+              <li class = "navitem"><a href="#contact">Contact </a></li>
             </ul>
           </nav>
         </div>
     </div>
-
-    <h1>Interaction Ecologies Group</h1>
+    <div class="company">
+      <img src="assets/png/umich.png">
+      <h1>Interaction Ecologies Group</h1>
+    </div>
+    
 	</header>
 
   <main id = "main" tabindex = "-1">
@@ -73,7 +78,7 @@
               <a href="mailto:gparuthi@umich.edu">Email</a> -
               <a href="https://github.com/gparuthi/">Github</a> -
               <a href="http://www.linkedin.com/in/gparuthi">LinkedIn</a> -
-              <a href="http://scholar.google.com/citations?user=WsoaFHIAAAAJ&hl=en">Scholar</a> -
+              <a href="http://scholar.google.com/citations?user=WsoaFHIAAAAJ&hl=en">Google Scholar</a> -
               <a href="http://gauravparuthi.com/resume/gauravparuthi.pdf">Resume</a>
             </div>
           </div>
@@ -347,11 +352,22 @@
 
       </div>
 
+      <div class = "nine left" id = "contact"><h2> Contact </h2></div>
+      <div class = "ten right" id = "contact_info" tabindex = 0>
+        <p>Please contact us at <a href="info@intecolab.com">info@intecolab.com</a> for more information.</p>
+      </div>
+
     </div>
   </main>
 
    <footer>
-    <div class="footer"> Updated 02 Sep 2016 |   <a href="http://si.umich.edu">School of Information</a>   |   <a href="//www.umich.edu">University of Michigan</a></div>
+    <p class="affliation">We are affiliated with <a href="misc.si.umich.edu">Michigan Interactive and Social Computing (MISC)</a>, and collaborate extensively with the <a href="http://socialworldsresearch.org/">Social Worlds Group</a>.</p>
+
+    <div class="footerText"> 
+      <span>Updated 02 Sep 2016</span> |
+      <a href="http://si.umich.edu">School of Information</a> |
+      <a href="//www.umich.edu">University of Michigan</a>
+    </div>
   </footer>
 
 <!-- Modal1 -->
@@ -383,9 +399,9 @@
                                           Published 20 May 2013.
                                         </dt>
                                         <br>
-                                        <dd>
-                                          ##Abstract
-                                        </dd>
+                                        <b>
+                                          Abstract
+                                        </b>
                                         <br>
                                         <dd>
                                           Building usable systems is challenging. In this time when websites are the face of virtually every organization, there are many cases where usability cannot be addressed as effectively as one might like, especially in nonprofit organizations. In the Social Overlays, we investigate a novel approach to creating usable websites, that is to enable users themselves to collectively improve the site.
@@ -395,9 +411,9 @@
                                           We developed Social Overlays, a Chrome extension, to enable end–users to identify and repair common user interface problems through creating “overlays” on web pages as part of their regular use, thereby improving usability while reducing the need for professional services. In short, Social Overlays harnesses the diversity of experience and ideas within a community to “crowd source” usability.
                                         </dd>
                                         <br>
-                                        <dd>
-                                          ##Talk
-                                        </dd>
+                                        <b>
+                                          Talk
+                                        </b>
                                         <br>
                                         <dd>
                                           <a href="http://dongtao.people.si.umich.edu/wp-content/uploads/2011/11/SO_INTERACT_Slides_Web.pdf" onclick="_gaq.push(['_trackEvent','download/http://dongtao.people.si.umich.edu/wp-content/uploads/2011/11/SO_INTERACT_Slides_Web.pdf']);">Slides of the Social Overlays talk at INTERACT 2013</a>
@@ -455,33 +471,33 @@
                                           Community displays facilitate interaction and increase awareness in collocated communities. In this work, we designed and developed a community driven proactive display system that detects the nearby users and allow its users to personalize content for the display. We have used findings from existing literature to create a community display system that is well-suited for an existing student community. Moreover, we expand the design space for proactive community displays to reduce the burden of updating content, provide greater realtime control, and allow greater exploration of community content and community members.
                                         </dd>
                                         <br>
-                                        <dd>
-                                          ##This is how it looks like:
-                                        </dd>
+                                        <b>
+                                          This is how it looks like:
+                                        </b>
                                         <br>
                                         <dd>
                                           <img width="600" src="assets/projects/StoneSoup_renderer.png" alt="Renderer">
                                         </dd>
                                         <br>
-                                        <dd>
-                                          ##Mobile App
-                                        </dd>
+                                        <b>
+                                          Mobile App
+                                        </b>
                                         <br>
                                         <dd>
                                           <img src="assets/projects/StoneSoup_mobile.png" alt="mobile">
                                         </dd>
                                         <br>
-                                        <dd>
-                                           ##Architecture 
-                                        </dd>
+                                        <b>
+                                           Architecture 
+                                        </b>
                                         <br>
                                         <dd>
                                             <img src="assets/projects/StoneSoup_architecture.png" alt="Architecture of our application.">
                                         </dd>
                                         <br>
-                                        <dd>
-                                            ##Deployment
-                                        </dd>
+                                        <b>
+                                            Deployment
+                                        </b>
                                         <br>
                                         <dd>
                                             <img width="600" src="assets/projects/deployment.jpg" alt="Deployment.">
@@ -534,9 +550,9 @@
                                           Published 20 May 2013.
                                         </dt>
                                         <br>
-                                        <dd>
-                                          ##Abstract
-                                        </dd>
+                                        <b>
+                                          Abstract
+                                        </b>
                                         <br>
                                         <dd>
                                           This work explores the potential value of using the enormous amount of activity traces latest ubicomp environments have started to capture. We sought to understand potential practices of using these traces in the long term through a field-based study in the United States that examines how today’s people use traces left by their predecessors in the houses where they live.
@@ -724,9 +740,9 @@
                                           Published 20 Jun 2012.
                                         </dt>
                                         <br>
-                                        <dd>
-                                          ##Abstract
-                                        </dd>
+                                        <b>
+                                          Abstract
+                                        </b>
                                         <br>
                                         <dd>
                                           The popularization of Location Based Services (LBS) has created new challenges for MobileHCIion designers in validating the design of their applications. Existing tools designed to play back GPS location traces data streams have shown potential for testing LBS applications and for supporting rapid and reflective prototyping. However, selecting a useful set of location traces from among a large collection remains a difficult task. In this project we present TraceViz, the first system that is aimed specifically at supporting LBS designers in exploring, filtering, and selecting location traces. TraceViz employs dynamic queries and “brushing” to allow LBS designers to flexibly adjust their trajectory filter criteria to find location traces of interest. An evaluation performed with eight LBS designers and developers indicates that TraceViz is helpful for rapidly locating useful traces and also highlights areas for future improvement

@@ -1,5 +1,6 @@
 html {
 	font-family: "PT Serif";
+	scroll-behavior: smooth;
 }
 
 .header{
@@ -8,7 +9,6 @@ html {
 }
 
 .nav{
-	padding: 20px;
 	display: flex;
 	justify-content: center;
 	font-family: "Open Sans";
@@ -22,6 +22,11 @@ html {
 	/*transition: 0.4s;
 	position: fixed;
 	z-index: 99;*/
+}
+
+#nav {
+	font-size: 1.6rem;
+	padding: 20px;
 }
 
 .nav li{
@@ -40,23 +45,37 @@ html {
 
 .nav a:hover{
 	text-decoration: none;
-	color: yellow;
+	color: #FFCB05;
 	border-bottom: 1px solid black;
 }
 
 .nav a:active{
-	text-decoration: ;
+	text-decoration: none;
+}
+
+.company {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	padding: 30px;
+}
+
+.company img {
+	height: 75px;
+	width: 75px;
+	margin-right: 30px;
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	text-align: center;
-	padding: 40px;
-	padding-top: 60px; 
+/*	padding-top: 60px; */
 }
 
 h2{
-	padding-top: 30px;
 	font-size: 2.2rem;
 }
 
@@ -69,7 +88,7 @@ p {
 	grid-template-columns: 20fr 80fr;
 	grid-template-rows: auto auto auto auto;
 	display: grid;
-	grid-row-gap: 10px;
+	grid-row-gap: 25px;
 }
 
 .left {
@@ -80,9 +99,9 @@ p {
 
 	margin: 5px 0;
 
-	color: darkblue;
+	color: #00274C;
 
-	border-right: 2px solid darkblue;
+	border-right: 2px solid #00274C;
 
 	text-align: left;
 }
@@ -91,7 +110,7 @@ p {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	padding: 20px 30px;	
+	padding: 30px 40px;	
 
 	box-sizing: border-box;
 
@@ -133,7 +152,7 @@ p {
 .member .imageSection img {
 	border-radius: 50%;
 	height: 150px;
-	width: 150px
+	width: 150px;
 }
 
 .member .infoSection {
@@ -146,10 +165,10 @@ p {
 
 .member .name {
 	font-size: 1.5rem;
-	color: blue;
+	color: #00274C;
 }
 
-.member .name, .position, .school, .links {
+.member .position, .school, .links, .description {
 	margin-top: 5px;
 }
 
@@ -189,7 +208,7 @@ p {
 }
 
 .project .proj_info_section .title {
-	color: blue;
+	color: #00274C;
 	font-size: 1.5rem;
 }
 
@@ -243,6 +262,7 @@ p {
 
 .publication .pub_info_section .pub_title{
 	font-size: 1.2rem;
+	color: #00274C;
 }
 
 .publication .pub_info_section .pub_authors{
@@ -250,7 +270,7 @@ p {
 }
 
 .publication .pub_info_section .pub_authors a{
-	color: blue;
+/*	color: blue;*/
 }
 
 .publication .pub_info_section .pub_more_info{
@@ -258,17 +278,57 @@ p {
 }
 
 .publication .pub_info_section .pub_more_info .pub_pdf{
-	color: purple;
+	color: darkred;
 }
 
-.footer {
-	width: 100vw;
+.nine{
+	grid-column: 1/2;
+	grid-row: 5/6;
 	text-align: center;
+}
+
+.ten{
+	grid-column: 2/3;
+	grid-row: 5/6;
+}
+
+.ten p {
+	width: 100%;
+	text-align: left;
+}
+
+footer {
 	display: flex;
+	text-align: center;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 
-	padding: 30px 20px;
+	padding: 30px 10px;
+
+	background: #00274C;
+	color: white;
+
+	margin-top: 20px;
+}
+
+footer a {
+	color: #FFCB05;
+}
+footer a:hover {
+	color: yellow;
+}
+
+.affliation {
+
+}
+
+.footerText {
+	width: 100vw;
+	text-align: center;
+
+
+	margin-top: 20px;
 }
 
 /*portfolio modal*/
@@ -300,15 +360,22 @@ p {
 }
 
 .portfolio-modal .modal-content a {
-    color: blue;
+    color: #00274C;
     min-height: 100%;
 }
 
+.portfolio-modal b {
+	margin: 5px 0;
+}
+
+.portfolio-modal h2 {
+	color: #00274C
+}
 
 
 /*project title*/
 .portfolio-modal .modal-content h3 {
-    color: blue;
+    color: #00274C;
     margin-top: 0px;
     margin-bottom: 50px;
     font-size: 3em;
@@ -371,6 +438,12 @@ a.skip-main:focus, a.skip-main:active {
 
 /*phone*/
 @media screen and (max-width: 760px){
+	h1  {
+		font-size: 1.5rem;
+	}
+	#nav {
+		font-size: 1rem !important;
+	}
 	.grid{
 		display: block;
 	}
@@ -410,6 +483,14 @@ a.skip-main:focus, a.skip-main:active {
 	}
 
 	.eight{
+		width: 100vw;
+	}
+
+	.nine{
+		width: 100vw;
+	}
+
+	.ten{
 		width: 100vw;
 	}
 }
@@ -470,5 +551,7 @@ a.skip-main:focus, a.skip-main:active {
 /*reduced motion*/
 
 @media screen and (prefers-reduced-motion: reduce){
-
+	html {
+		scroll-behavior: none;
+	}
   }
