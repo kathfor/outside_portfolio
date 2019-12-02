@@ -4,7 +4,7 @@ html {
 
 .header{
 	background-position: top;
-	text-align: center;
+	text-align: center; 
 }
 
 .nav{
@@ -16,6 +16,9 @@ html {
 	color: white;
 	font-size: 1.4rem;
 	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
 	/*transition: 0.4s;
 	position: fixed;
 	z-index: 99;*/
@@ -49,10 +52,11 @@ h1 {
 	font-size: 2.5rem;
 	text-align: center;
 	padding: 40px;
+	padding-top: 60px; 
 }
 
 h2{
-	
+	padding-top: 30px;
 	font-size: 2.2rem;
 }
 
@@ -65,7 +69,6 @@ p {
 	grid-template-columns: 20fr 80fr;
 	grid-template-rows: auto auto auto auto;
 	display: grid;
-
 	grid-row-gap: 10px;
 }
 
@@ -268,6 +271,76 @@ p {
 	padding: 30px 20px;
 }
 
+/*portfolio modal*/
+.portfolio-modal .modal-body {
+    position: static;
+}
+
+/*modal box size*/
+.portfolio-modal .modal-dialog {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*content*/
+.portfolio-modal .modal-content {
+    color: #746f6f;
+    padding: 0 0 2em 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: left;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.portfolio-modal .modal-content a {
+    color: blue;
+    min-height: 100%;
+}
+
+
+
+/*project title*/
+.portfolio-modal .modal-content h3 {
+    color: blue;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 3em;
+}
+
+/*bottom of the modal box including prev, next, back to work links*/
+.portfolio-modal .bottom {
+    padding: 0em 2em 1em 2em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+/*the X close icon*/
+.portfolio-modal .modal-header .close {
+    font-size: 4em;
+    padding: 0 1em 0 0;
+    font-weight: 200;
+    color: red;
+}
+
+.portfolio-modal .modal-header {
+    border-bottom: none;
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+*/
 a.skip-main {
 	left:-999px;
 	position:absolute;
